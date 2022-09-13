@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Mulish:wght@300;400;500;600&display=swap");
+* {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Mulish", sans-serif;
+}
+p {
+  margin: 0 !important;
+}
+body {
+  background-color: #f3f2ef;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 4px 8px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid silver;
+}
+.btn-search {
+  background-color: #fc5c65;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 1px silver;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.weather-box {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+.img-box {
+  width: 12rem;
+  height: 12rem;
+}
+
+.weather-sub-info p {
+  margin-left: 8px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .weather-main {
+    flex-direction: column !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .weather-data {
+    align-items: center !important;
+    margin: 0 !important;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .weather-sub-info img {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
