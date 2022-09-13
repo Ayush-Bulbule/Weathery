@@ -26,7 +26,7 @@ function App() {
     <>
       <SearchBox city={city} setCity={setCity} />
       {city ? <CityCard city={city} /> : <></>}
-      {(lat !== "" && lon !== "" && city === "") ? <CardMain lat={lat} lon={lon} /> : <h1></h1>}
+      {(lat !== "" && lon !== "" && city === "") ? <CardMain lat={lat} lon={lon} /> : <h1>Loading....</h1>}
 
 
 
